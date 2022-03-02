@@ -153,4 +153,4 @@ EMAIL_HOST_USER = 'falakshair.apptest@gmail.com'
 EMAIL_HOST_PASSWORD = 'falak1234'
 
 
-# django_heroku.settings(locals())
+django_heroku.settings(locals())
