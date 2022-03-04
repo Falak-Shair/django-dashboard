@@ -3,7 +3,7 @@
 
 In this project I have bulid fully functional Customer management system using Django.This project is divided into two section Customer and Admin
 
-Admin has the Ability to manage customers like views customer information and edit them also admin can delete and update customer order
+Admin has the Ability to manage customers. Admin can views customer information and edit them. Admin can delete and update customers orders
 
 # Admin panel
 
