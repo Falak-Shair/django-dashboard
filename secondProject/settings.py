@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 import os
 from pathlib import Path
-import django_heroku
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-)%m8drdn0rxwkpu06zt=5x@=$hucxn00)xh_vem#xb+zn@c+!m
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', 'https://falak-dashboard.herokuapp.com/']
+ALLOWED_HOSTS = ['https://falak-dashboard.herokuapp.com/', '127.0.0.1']
 
 
 # Application definition
@@ -124,9 +124,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 
 MEDIA_URL = '/images/'
 
@@ -153,4 +153,4 @@ EMAIL_HOST_USER = 'falakshair.apptest@gmail.com'
 EMAIL_HOST_PASSWORD = 'falak1234'
 
 
-django_heroku.settings(locals())
+# django_heroku.settings(locals())
